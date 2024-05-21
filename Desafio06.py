@@ -1,0 +1,5 @@
+number = float(input('Informe um numero qualquer: '))
+print('_______________________________________')
+print(f'O dobro: {number*2}')
+print(f'O triplo: {number*3} ')
+print(f'A raiz quadrada: {number**(1/2):.1f}')

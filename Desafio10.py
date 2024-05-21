@@ -1,0 +1,2 @@
+real = float(input('Quanto dinheiro voce tem R$ '))
+print(f'Voce pode comprar: \n>>> (Dolar)US$ {real/5.10:.2f}\n>>> (Euro)€ {real/5.55:.2f}\n>>> (Yuan)¥ {real/0.71:.2f}\n>>> (Iene)¥ {real*30.54:.2f}')
