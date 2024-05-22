@@ -7,7 +7,8 @@ size = len(list)
 
 # Função que retorna uma lista de índices aleatórios únicos
 def sorteio(size):
-    return sample(range(size), size)
+    x = sample(range(size), size)
+    return x
 
 # Coleta os nomes dos líderes dos grupos
 i = 0
