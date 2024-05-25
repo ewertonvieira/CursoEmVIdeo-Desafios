@@ -13,4 +13,4 @@ else:
         case 3:
             print(f'Unidade: {nums[2]}\nDezena: {nums[1]}\nCentenas: {nums[0]}')
         case 4:
-            print(f'Unidade: {nums[3]}\nDezena: {nums[2]}\nCentenas: {nums[1]}\nMilhar:{nums[0]}')
+            print(f'Unidade: {nums[3]}\nDezena: {nums[2]}\nCentenas: {nums[1]}\nMilhar: {nums[0]}')
