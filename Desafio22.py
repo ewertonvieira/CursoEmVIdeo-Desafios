@@ -5,7 +5,7 @@ print(f'Nome caixa alta: {name.upper()}')
 print(f'Nome caixa baixa: {name.lower()}')
 # Quantas letras ao todo, sem contar espacos;
 namenospace = name.replace(" ", "")
-print (len(namenospace))
+print ('O nome informado possui: ',len(namenospace),'Letras')
 # quantas letras tem o primeiro nome;
 name = name.lstrip()
 fistname = name[:name.find(" ")]
