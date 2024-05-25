@@ -1,5 +1,5 @@
 # Recebe nome completo
-namef = input('Informe seu nome completo: ')
+namef = input('Informe seu nome completo: ').strip()
 # Fatia o primeiro nome
 fistname = namef[:namef.find(' ')]
 # Fatia o ultimo nome
