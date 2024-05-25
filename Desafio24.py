@@ -1,4 +1,4 @@
-city = input('Informe nome da cidade em que mora: ')
+city = input('Informe nome da cidade em que mora\n>> ')
 city = city.upper()
 
 # starswith procura se uma string comeca com determinado parametro:
