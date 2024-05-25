@@ -4,4 +4,4 @@ namef = input('Informe seu nome completo: ').strip()
 fistname = namef[:namef.find(' ')]
 # Fatia o ultimo nome
 lastname = namef[namef.rfind(' '):]
-print(f'O primeiro nome: <{fistname.strip()}> o ultimo nome: <{lastname.strip()}>')
+print(f'O primeiro nome: <{fistname}> o ultimo nome: <{lastname}>')
