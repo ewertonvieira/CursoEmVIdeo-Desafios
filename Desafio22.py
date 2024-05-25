@@ -9,4 +9,4 @@ print (len(namenospace))
 # quantas letras tem o primeiro nome.
 name = name.lstrip()
 fistname = name[:name.find(" ")]
-print(f'Numero de letras do primeiro nome: {len(fistname)} | Primeiro nome: {fistname}')
+print(f'Numero de letras do primeiro nome: {len(fistname)} | Primeiro nome: {fistname} ')
