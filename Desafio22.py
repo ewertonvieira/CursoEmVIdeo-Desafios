@@ -1,4 +1,4 @@
-name = input("Informe seu nome completo: ")
+name = input("Informe seu nome completo: ").strip()
 # O nome de todas as letras MAICUSCULAS;
 print(f'Nome caixa alta: {name.upper()}')
 # O nome com todas minusculas
