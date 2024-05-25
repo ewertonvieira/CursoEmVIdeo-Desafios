@@ -1,5 +1,3 @@
-from os import system
-
 num = int(input('(Entre 0 e 9999)INFORME NUMERO: '))
 if num < 0 or num > 9999:
     input("Entrada invalida!\nPressione qualquer tecla para sair do programa!")
