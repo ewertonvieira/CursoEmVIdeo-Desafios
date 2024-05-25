@@ -1,4 +1,4 @@
-frase = input('Informe uma frase: ')
+frase = input('Informe uma frase: ').strip()
 frase = frase.upper()
 # Quantas vezes aparece a letra A:
 print(f'A letra "a" aparece: {frase.count('A')} vezes')
