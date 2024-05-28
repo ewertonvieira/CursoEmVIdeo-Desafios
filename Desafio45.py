@@ -35,18 +35,20 @@ def Main():
     system('cls')
     print('---' * 9, 'Joquempo', '---' * 9)
     print('A máquina está escolhendo entre pedra, tesoura e papel...')
+    # Captura esc_maquina
     esc_maquina = Esc_maquina()
-    print(esc_maquina)
     sleep(2)
     print('Pronto! A máquina já escolheu!!!')
-    print('---' * 21)
+    print('-'* 64)
     # Escolha do usuario
     print('Agora sua vez!')
     print('Menu de opções:\n1 - Pedra\n2 - Tesoura\n3 - Papel')
     esc_usuario = int(input('Qual sua escolha?\n>> '))
+    # Captura esc_maquiina de Esc_usuario(esc_maquina)
     esc_usuario = Esc_usuario(esc_usuario)
     if esc_usuario == 'Escolha inválida!':
         input('Escolha invalida!!\nPressione uma tecla para sair...')
+    # Chama Vencedor
     Vencedor(esc_usuario, esc_maquina)
 
 if __name__ == '__main__':
