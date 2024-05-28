@@ -18,8 +18,8 @@ def Menu_if(valor_produto, forma_pagamento_op):
             print(f'{valor_produto} R$ não recebe desconto, devido forma de pagamento(2x no cartao)!')  
         # Levando em consideracao que o juros nao é progressivo.      
         else:
-            valor_comjuros = valor_produto + (valor_produto * (30/100))
-            print(f'{valor_produto} R$ com juros de 30% fica: {valor_comjuros}')
+            valor_comjuros = valor_produto + (valor_produto * (20/100))
+            print(f'{valor_produto} R$ com juros de 20% fica: {valor_comjuros}')
 def Main():
     valor_produto = float(input('(Reais)Informe preco do produto:\n>> R$ '))
     forma_pagamento_op = int(input('Menu:\n1 - Dinheiro/Cheque\n2 - Cartao/A vista\n3 - Cartao/Parcelado\n>> '))
