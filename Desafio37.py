@@ -17,10 +17,13 @@ def Menu(num):
         print('Convertendo numero em octal...')
         slp(2)
         print(f'O octal de {num} é {oct(num)[2:]}')
-    else:
+    elif op == 3:
         print('Convertendo numero em hexadecimal...')
         slp(2)
         print(f'O numero {num} em hexadecimal é {hex(num)[2:]}')
+    else:
+        print('Opcao invalida')
+
         
 def main():
     system('cls')  
