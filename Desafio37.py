@@ -1,40 +1,33 @@
-from time import sleep
 from os import system
+from time import sleep as slp
 
-def line():
-    print('=='*30)
-# Leia numero inteiro
-line()
-num = int(input('Informe o numero que deseja converter:\n>>> '))
-num1 = num
-line()
-# Escolher base de selecao
-system('cls')
-line()
-menu = input('Menu Conversao:\n1 - Binario\n2 - Octal\n3 = Hexadecimal\n>>> ').strip()
-system('cls')
-line()
-# selecao 1: Binario
-if menu == '1':
-    size = num.bit_length()
-    i = 0; binary = [None] * size
-    while i != size:
-        binary[i] = num % 2
-        num = num // 2
-        i += 1
-    print('Convertendo numero para Binario...')
-    sleep(2)
-    print(f"O numero: {num1} convertido em binario é: {' '.join(map(str, reversed(binary)))}")
+def Line():
+    print('*_=-'*20)
 
-# selecao 2: octal
-elif menu == '2':
-    print('Convertendo numero para Octal...')
-    sleep(2)
-    print(f'O numero: {num} convertido em Octal é: {oct(num)}')
-# selecao 3: hexadecimal
-elif menu == '3':
-    print('Convertendo numero para Hexadecimal...')
-    sleep(2)
-    print(f"O numero: {num} convertido em binario é: {hex(num)}")
-
-    
+def Menu(num):
+    Line()
+    op = int(input('Menu:\n1 - Converter para binario:\n2 - Converter para octal:\n3 - Converter para hexadecimal:\n>>> '))
+    Line()
+    system('cls')
+    if op == 1:
+        print('Convertendo numero em binario...')
+        slp(2)
+        print(f'O binario de {num} é {bin(num)[2:]}')
+    elif op == 2:
+        print('Convertendo numero em octal...')
+        slp(2)
+        print(f'O octal de {num} é {oct(num)[2:]}')
+    else:
+        print('Convertendo numero em hexadecimal...')
+        slp(2)
+        print(f'O numero {num} em hexadecimal é {hex(num)[2:]}')
+        
+def main():
+    system('cls')  
+    Line()
+    num = int(input('Informe numero que deseja converter\n>>> '))
+    system('cls')
+    Menu(num)
+# Chama a funcao Main()
+if __name__ == '__main__':
+    main()
