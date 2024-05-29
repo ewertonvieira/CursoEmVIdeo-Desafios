@@ -37,7 +37,7 @@ def Main():
     print('A máquina está escolhendo entre pedra, tesoura e papel...')
     # Captura esc_maquina
     esc_maquina = Esc_maquina()
-    sleep(2)
+    sleep(4)
     print('Pronto! A máquina já escolheu!!!')
     print('-'* 64)
     # Escolha do usuario
