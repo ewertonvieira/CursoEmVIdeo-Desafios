@@ -14,4 +14,5 @@ ano_pagamento = int(input('EM QUANTOS ANOS PRETENDE PAGAR: '))
 
 prestacoes = prest_mes(ano_pagamento, valor_casa)
 retorno_teste = teste_aprov(prestacoes, salario_solicitante)
-print(f'Sr(a). {nome_solicitante}, infelizmente seu empretimo nao foi aprovado! Pois o valor da parcela {prest_mes:.2f} R$ supera 30% {salario_solicitante*(30/100):.2f} R$'if retorno_teste == False else f'Sr(a). {nome_solicitante}, sua solicitacao de emprestimo foi aprovada!')
+print(f'''Sr(a). {nome_solicitante}, infelizmente seu empretimo nao foi aprovado! Pois o valor da parcela {prestacoes:.2f} R$ supera 30% {salario_solicitante:.2f} R$ do valor do seu salario'''if retorno_teste == False 
+      else f'''Sr(a). {nome_solicitante}, sua solicitacao de emprestimo foi aprovada!''')
