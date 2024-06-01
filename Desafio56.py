@@ -13,16 +13,16 @@ for i in range(size):
         sexo = 'feminino'
     print('-'*30)
     lista_pessoas[i] = [{"nome" : nome, "idade" : idade, "sexo" : sexo}]
-
+#
 sy('cls')
 for j in range(0, size):
     idade = lista_pessoas[j][0]["idade"]
     soma = idade + soma
+
 print(f'Media de idade: {soma/size:.2f} anos\n')
 print('-'*30)
-
+#
 lista_pessoas.sort(key=lambda x: x[0]["idade"])
-
 for jk in range(0, size):
     if lista_pessoas[jk][0]["idade"] < 21:
         count += 1
