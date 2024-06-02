@@ -1,7 +1,7 @@
 from os import system  as limpar
 limpar('cls')
 # Instancia a lista e o tamanho dela:
-lista_pessoa = [None] * 4; size = len(lista_pessoa)
+lista_pessoa = [0] * 4; size = len(lista_pessoa)
 # Variaveis para captura de valores:
 nome_masc_max = ''; idade_max = 0
 # Variavel auxiliar e contador
@@ -30,8 +30,6 @@ for i in range(size):
     if sexo == 'feminino':
         if idade < 21:
             count += 1
-    # Add tudo na lista de dicionarios:
-    lista_pessoa[i] = [{"Name": nome, "Age": idade, "Gender": sexo}]
 # Imprimi tudo:
 limpar('cls')
 print(f'Media de idade do grupo: {aux/4:.0f}\nNome do homem mais velho\nNome: {nome_masc_max}\nIdade: {idade_max}\
