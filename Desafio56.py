@@ -1,34 +1,39 @@
-from os import system as sy
-lista_pessoas = [None] * 4; count = 0; soma = 0
-size = len(lista_pessoas)
-#
-sy('cls')
+from os import system  as limpar
+limpar('cls')
+# Instancia a lista e o tamanho dela:
+lista_pessoa = [None] * 4; size = len(lista_pessoa)
+# Variaveis para captura de valores:
+nome_masc_max = ''; idade_max = 0
+# Variavel auxiliar e contador
+aux = 0; count = 0
+
+# Captura todos o dados:
 for i in range(size):
-    nome = str(input('Informe nome: '))
-    idade = int(input('Informe idade: '))
-    op = int(input('Menu:\n1 - Masculino | 2 - Femino\n>> '))
+    nome = input('Informe nome: ')
+    idade = int(input('Informe a idade: '))
+    op = int(input('Sexo: \n1 - Masculino\n2 - Feminino\n >> '))
     if op == 1:
         sexo = 'masculino'
-    if op == 2:
+    elif op == 2:
         sexo = 'feminino'
-    print('-'*30)
-    lista_pessoas[i] = [{"nome" : nome, "idade" : idade, "sexo" : sexo}]
-#
-sy('cls')
-for j in range(0, size):
-    idade = lista_pessoas[j][0]["idade"]
-    soma = idade + soma
-
-print(f'Media de idade: {soma/size:.2f} anos\n')
-print('-'*30)
-#
-lista_pessoas.sort(key=lambda x: x[0]["idade"])
-for jk in range(0, size):
-    if lista_pessoas[jk][0]["idade"] < 21:
-        count += 1
-    if lista_pessoas[jk][0]["sexo"] == 'masculino':
-        print(f"Nome do homem mais velho: {lista_pessoas[size-1][0]["nome"]}\n")
-        print('-'*30)
-        break
-print(f"Mulheres menores de 21: {count}\n")
-print('-'*30)
+    else:
+        input('Erro!\nSair...')
+    print(30*'__')
+    # Pega a media de idade do grupo, mas ainda nao foi dividido por 4:
+    aux += idade
+    # Pega nome do homem mais velho e sua idade:
+    if sexo == 'masculino':
+        if idade > idade_max:
+            idade_max = idade
+            nome_masc_max = nome
+    # Pega o numero de mulheres menor de 20 anos:
+    if sexo == 'feminino':
+        if idade < 21:
+            count += 1
+    # Add tudo na lista de dicionarios:
+    lista_pessoa[i] = [{"Name": nome, "Age": idade, "Gender": sexo}]
+# Imprimi tudo:
+limpar('cls')
+print(f'Media de idade do grupo: {aux/4:.0f}\nNome do homem mais velho\nNome: {nome_masc_max}\nIdade: {idade_max}\
+    \nQuantidade de menores de 20 anos(feminino): {count}')
+print(30*'__')
