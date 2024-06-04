@@ -1,4 +1,5 @@
-sexo = ""; i = 0
+sexo = ""
+i = 0
 while sexo  != "m" and sexo != "f":
     sexo = input('Menu:\nm - Marculino\nf - Feminino\n>> ').strip().lower()
     i += 1
