@@ -29,7 +29,6 @@ def Main():
         sleep(2)
         op_maquina = randint(1, 3)
         maquina = Maquina(op_maquina)
-        print(maquina)
         # Escolha Usuario
         print("Agora é sua vez!\nMenu:")
         op_user = int(input("1 - Pedra\n2 - Papel\n3 - Tesoura\n>> "))
