@@ -1,17 +1,20 @@
-lista = [int] * 4
+lista = [0] * 4
 size = len(lista)
 
 for i in range(size):
-    lista[i] = int(input(f"Digite um valor inteiro para a posicao [{i}]: "))
-maior = max(lista)
-menor = min(lista)
+    lista[i] = int(input(f"Digite um valor inteiro para a posição [{i}]: "))
 
-maiorl = []; menorl = []
-for k in lista:
-    if maiorl >= lista:
-        maiorl.append(k)
-    if menorl <= lista:
-        menorl.append(k)
-print(f'Voce digitou: {lista}')
-print(f"O maior número digitado: {maior} na(s) posição(ões) { maiorl}")
-print(f"O menor número digitado foi {menor} na(s) posição(ões) {menorl}")
+maiorvalor = max(lista)
+menorvalor = min(lista)
+
+print(f"O maior valor digitado foi {maiorvalor} e os espaços", end=" ")
+
+for j, valor in enumerate(lista):
+    if valor == maiorvalor:
+        print(j, end="... ")
+
+print(f"\nO menor valor digitado foi {menorvalor} e os espaços", end=" ")
+
+for k, valor in enumerate(lista):
+    if valor == menorvalor:
+        print(k, end="... ")
