@@ -7,13 +7,11 @@ maior = max(lista)
 menor = min(lista)
 
 maiorl = []; menorl = []
-for k in range(size):
-    if maior == lista[k]:
+for k in lista:
+    if maiorl >= lista:
         maiorl.append(k)
-        maiorf = '... '.join(map(str, str(maiorl)))
-    if menor == lista[k]:
+    if menorl <= lista:
         menorl.append(k)
-        menorf = '... '.join(map(str, str(menorl)))
 print(f'Voce digitou: {lista}')
-print(f"O maior número digitado: {maior} na(s) posição(ões) {maiorf}")
-print(f"O menor número digitado foi {menor} na(s) posição(ões) {menorf}")
+print(f"O maior número digitado: {maior} na(s) posição(ões) { maiorl}")
+print(f"O menor número digitado foi {menor} na(s) posição(ões) {menorl}")
