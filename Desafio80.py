@@ -9,6 +9,7 @@ for _ in range(5):
             if item >= num:
                 listanum.insert(i, num)
                 inserido = True # se o valor foi insetido o valor se torna True
+                break
         if inserido == False:
             listanum.append(num)
 print(listanum)
