@@ -1,5 +1,5 @@
 print("."*40)
-print("BANCO CEV".center(39))
+print("*BANCO CEV*".center(39))
 print("."*40)
 valor = int(input("Que valor voce quer sacar? R$ "))
 total = valor; ced = 50; totalced = 0
