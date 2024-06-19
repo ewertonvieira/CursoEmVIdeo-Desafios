@@ -1,10 +1,12 @@
 count = 0
-carac = str(input('Informe uma expressao matematica: ')).replace(' ', '')
-carac = carac.split()
-for item in carac:
-    for paren in item:
-        if paren == '(':
-            count += 1
-        elif paren == ')':
-            count -= 1
-print(f'Expressão {item} valida!' if count == 0 else f'Expressão {item} invalida!')
+found = False
+xpr = str(input('Informe uma expressao matematica: ')).replace(' ', '')
+xpr = xpr.split()
+for char in xpr[0]:
+    if char == '(':
+        found = True
+        count += 1
+    elif char == ')' and found == True:
+        count -= 1
+        found = False
+print('Operacao valida' if count == 0 else 'Operacao Invalida')
