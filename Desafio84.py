@@ -1,5 +1,4 @@
 pessoas = []; maispesadas = []; maisleves = []
-count = 0
 
 while True:
     print('*'*27)
