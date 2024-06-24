@@ -10,7 +10,7 @@ while True:
     if op in ['N']:
         break
 print('****'*10)
-print('NO.  Nome     MEDIA')
+print('NO.      Nome        MEDIA')
 print('____'*10)
 for enum, aluno in enumerate(controleacademico):
-    print(enum,'  ',aluno[0],'    ',(aluno[1][0]+aluno[1][1])/2)
+    print(enum,'   ',aluno[0],' '*(15-len(aluno[0])),(aluno[1][0]+aluno[1][1])/2)
