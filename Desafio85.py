@@ -5,5 +5,5 @@ for i in range(1, 8):
         numlist[0].append(numb)
     else:
         numlist[1].append(numb)
-print('_-_'*20)
+print('-='*21)
 print(f'Os valores pares digitados foram: {sorted(numlist[0])}\nOs valores impares digitados foram: {sorted(numlist[1])}')
