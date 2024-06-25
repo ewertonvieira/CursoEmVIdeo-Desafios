@@ -14,3 +14,11 @@ print('NO.      Nome        MEDIA')
 print('____'*10)
 for enum, aluno in enumerate(controleacademico):
     print(enum,'   ',aluno[0],' '*(15-len(aluno[0])),(aluno[1][0]+aluno[1][1])/2)
+print('=-=-'*10)
+while True:
+    opaluno = int(input('Mostra a nosta de qual aluno separdamente?(999 para parar) '))
+    print(f'Nota de {controleacademico[opaluno][0]} são: {controleacademico[opaluno][1]}')
+    if opaluno == 999:
+        print('FINALIZANDO...')
+        break        
+print('<<< VOLTE SEMPRE >>>'.center(49))
